@@ -20,7 +20,7 @@ class PetsController < ApplicationController
   end
 
   get '/pets/:id' do
-    @pets = Pet.find(params[:id])
+    @pet = Pet.find(params[:id])
     erb :'/pets/show'
   end
 
